@@ -14,7 +14,7 @@ from plotly.express import line
 
 # ENVIRONMENT VARIABLE RELATED CODE:
 
-from app.alphavan import API_KEY #this imports from the consolidated file 
+from app.alpha import API_KEY #this imports from the consolidated file 
 
 # UNEMPLOYMENT REPORT FUNCTIONALITY
 
