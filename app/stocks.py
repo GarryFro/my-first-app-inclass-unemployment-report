@@ -13,6 +13,10 @@ def fetch_stocks_csv(symbol="MSFT"):
     request_url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={API_KEY}&outputsize=full&datatype=csv"
     return read_csv(request_url)
 
+def test_usd_formatting():
+    assert format_usd(3.5) == "$3.50"
+    assert format_usd(0.44444) == "$0.44"
+    assert format_usd(123456789) == "$123,456,789.00"
 
 # the weird main conditional says
 # only run the indented code if you are running this file
