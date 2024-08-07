@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <h2>Stocks Dashboard ({{ symbol }})</h2>
+
+    <p class="lead">Latest Close: {{ latest_close_usd }} (as of {{ latest_date }})</p>
+
+    <div id="chart-container" height="700px"></div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>

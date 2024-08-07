@@ -9,5 +9,6 @@ plotly
 python-dotenv
 
 pytest # you will now need to reinstall the pip install cmd
+gunicorn
 
 flask
